@@ -1,0 +1,24 @@
+{
+	"name": "tutorial-angular-coffeescript-classes",
+	"version": "0.0.0",
+	"description": "Using CoffeeScript classes with AngularJS",
+	"author": {
+		"name": "Cary Landholt",
+		"email": "cary@landholt.com",
+		"url": "https://github.com/CaryLandholt"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CaryLandholt/tutorial-angular-coffeescript-classes"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"devDependencies": {
+		"coffee-script": "~1.7.1",
+		"gulp": "~3.8.0",
+		"gulp-coffee": "~2.0.1",
+		"gulp-ng-classify": "~3.0.0",
+		"gulp-ngmin": "~0.3.0"
+	}
+}

@@ -1,0 +1,7 @@
+.temp/
+bower_components/
+dist/
+node_modules/
+npm-debug.log
+phantomjsdriver.log
+test-results.xml
