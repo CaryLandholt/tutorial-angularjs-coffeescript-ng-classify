@@ -1,18 +1,32 @@
-var App, MyValue;
-App = function () {
-  function App() {
-    return [
-      'ngAnimate',
-      'ngRoute'
-    ];
+var Greet, Home, Routes;
+Home = function () {
+  function Home($log, anotherService) {
+    $log.info('homeService instantiated');
   }
-  return App;
+  return Home;
 }();
-MyValue = function () {
-  function MyValue() {
-    return 'Cary';
+Greet = function () {
+  function Greet($log) {
+    $log.info('greetService instantiated');
   }
-  return MyValue;
+  return Greet;
 }();
-angular.module('app', App());
-angular.module('app').value('myValue', MyValue());
+Routes = function () {
+  function Routes($routeProvider) {
+    $routeProvider.when('/home', { controller: 'homeController' });
+  }
+  return Routes;
+}();
+angular.module('app').factory('Home', [
+  '$log',
+  'anotherService',
+  Home
+]);
+angular.module('app').service('greetService', [
+  '$log',
+  Greet
+]);
+angular.module('app').config([
+  '$routeProvider',
+  Routes
+]);
