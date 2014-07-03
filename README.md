@@ -16,6 +16,7 @@ Once the dependencies have been installed, enter the following in the terminal:
 ```bash
 $ git clone git@github.com:CaryLandholt/tutorial-angularjs-coffeescript-ng-classify.git
 $ cd tutorial-angularjs-coffeescript-ng-classify
+$ git checkout multiple-modules
 $ npm install
 ```
 
@@ -26,6 +27,4 @@ Enter the following in the terminal:
 $ gulp
 ```
 
-Now you can make changes to `original/controller.coffee` and with each save see the changes made by [ng-classify](https://github.com/CaryLandholt/ng-classify) in `ng-classified/controller.coffee`.
-
-`destination/controller.js` contains the final JavaScript compiled code.
+Now you can make changes to `src` and with each save see the changes in `dist`.
